@@ -19,7 +19,7 @@ import org.slf4j.Logger;
 @Mod(MCCourseMod.MOD_ID)
 public class MCCourseMod
 {
-    // Define mod id in a common place for everything to referencefyfgjygghhkj
+    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "mccourse";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
