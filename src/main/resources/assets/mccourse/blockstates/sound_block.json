@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "":{
+      "model": "mccourse:block/sound_block"
+    }
+  }
+
+}
