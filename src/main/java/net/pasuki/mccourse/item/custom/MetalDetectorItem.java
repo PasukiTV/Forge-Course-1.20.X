@@ -1,10 +1,8 @@
 package net.pasuki.mccourse.item.custom;
 
-import com.mojang.brigadier.Message;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -12,7 +10,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.pasuki.mccourse.block.ModBlocks;
+
 
 public class MetalDetectorItem extends Item {
     public MetalDetectorItem(Properties pProperties) {
@@ -20,6 +18,7 @@ public class MetalDetectorItem extends Item {
     }
 
     @Override
+    @SuppressWarnings({"NullableProblems", "DataFlowIssue"})
     public InteractionResult useOn(UseOnContext pContext) {
         if(!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
